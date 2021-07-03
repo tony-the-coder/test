@@ -1,0 +1,60 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    background: $dark-color;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: $light-color
+}
+
+#main-nav{
+    display: flex;
+    justify-content: space space-between;
+    padding-top: 1rem;
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 1rem 1.5rem;
+    }
+
+    a {
+        color: #fff;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px transparent solid;
+    }
+}
+
+#header {
+    &-home {
+        height: 100vh;
+        border: 13px solid #fff;
+        
+        //The content for the header
+
+        .header-content {
+            text-align: center;
+            padding-top:18%;
+            
+
+            h1 {
+                font-size: 3rem;
+                line-height: 1.5;
+                color: $light-color;
+            }
+        }
+    }
+}
